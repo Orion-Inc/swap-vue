@@ -16,7 +16,7 @@
                         <div id="recover-card" class="animated preFadeIn fadeIn">
                             <div class="flex-card clean-login-card">
                                 <h2>Reset Password</h2>
-                                
+                                <ForgotPasswordForm/>
                             </div>
 
                             <p class="has-text-centered mt-40">

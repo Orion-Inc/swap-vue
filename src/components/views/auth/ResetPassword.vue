@@ -1,4 +1,5 @@
 <template>
+    <!-- Hero and nav -->
     <div class="hero is-light-grey is-fullheight">
         <div class="navbar-wrapper navbar-sticky">
             <div class="hero-head">
@@ -8,20 +9,17 @@
             </div>
         </div>
 
+        <!-- Hero image -->
         <div id="main-hero" class="hero-body bg-1">
             <div class="container has-text-centered">
-                <div class="columns is-vcentered mt-20 mb-80">
+                <div class="columns is-vcentered mt-40 mb-80">
                     <div class="column is-6 is-offset-3">
                         <!-- Login form -->
                         <div id="login-card" class="animated preFadeIn fadeIn">
                             <div class="flex-card clean-login-card">
-                                <h2>Sign in</h2>
-                                <SignInForm/>
+                                <h2>Change Password</h2>
+                                <ResetPasswordForm/>
                             </div>
-
-                            <p class="has-text-centered mt-30">
-                                <a class="no-account light-text" href="#">Forgot your password?</a>
-                            </p>
                         </div>
                         <!-- /Login form -->
                     </div>
@@ -33,10 +31,10 @@
 
 <script>
 import Navbar from '../../../components/html/navbar.vue';
-import SignInForm from '../../../components/forms/auth/signin.vue';
+import ResetPasswordForm from '../../../components/forms/auth/resetpassword.vue';
 
 export default {
-    name: 'SignIn',
-    components: {Navbar, SignInForm}
+    name: 'ResetPassword',
+    components: {Navbar, ResetPasswordForm}
 }
 </script>

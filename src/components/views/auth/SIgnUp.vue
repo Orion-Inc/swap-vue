@@ -32,7 +32,7 @@
                     <div id="signup-card" class="animated fadeIn">
                         <div class="flex-card clean-signup-card mb-0">
                             <h2 class="has-text-centered pt-0">Sign up</h2>
-                            form goes here
+                            <SignUpForm/>
 
                             <p class="has-text-centered mt-20">
                                 Already have an Account? <a class="no-account primary-text" href="">Sign in</a>

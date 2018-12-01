@@ -34243,6 +34243,10 @@ figure.team-slanted:hover .member-position {
     color: #cb4b70
 }
 
+a.no-account.light-text:hover {
+    color: #ffffff!important;
+}
+
 .icon.user,
 .icon.password {
     margin: 5px 10px 0 0
