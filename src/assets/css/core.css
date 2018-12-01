@@ -4449,7 +4449,7 @@ footer.footer-light-medium .small-footer-logo {
     opacity: 0;
     -webkit-clip-path: polygon(50% 10%, 15% 90%, 85% 90%);
     clip-path: polygon(50% 10%, 15% 90%, 85% 90%);
-    transition-property: transform, opacity;
+    transition: transform, opacity;
     transition-duration: .2s, .4s;
     transition-delay: .4s, 0s;
     transition-timing-function: ease-out;
@@ -16105,7 +16105,7 @@ footer.footer-light-medium .small-footer-logo {
     opacity: 0;
     -webkit-clip-path: polygon(50% 10%, 15% 90%, 85% 90%);
     clip-path: polygon(50% 10%, 15% 90%, 85% 90%);
-    transition-property: transform, opacity;
+    transition: transform, opacity;
     transition-duration: .2s, .4s;
     transition-delay: .4s, 0s;
     transition-timing-function: ease-out;
@@ -27254,7 +27254,7 @@ footer.footer-light-medium .small-footer-logo {
     opacity: 0;
     -webkit-clip-path: polygon(50% 10%, 15% 90%, 85% 90%);
     clip-path: polygon(50% 10%, 15% 90%, 85% 90%);
-    transition-property: transform, opacity;
+    transition: transform, opacity;
     transition-duration: .2s, .4s;
     transition-delay: .4s, 0s;
     transition-timing-function: ease-out;
