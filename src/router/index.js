@@ -30,5 +30,6 @@ export default new Router({
 			name: 'Reset Password',
 			component: ResetPassword
 		}
-	]
+	],
+	mode: 'history'
 })
