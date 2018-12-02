@@ -1,29 +1,21 @@
 <template>
-    <div class="hero is-light-grey is-fullheight">
-        <div class="navbar-wrapper navbar-sticky">
-            <div class="hero-head">
-                <!-- Nav -->
-                <Navbar/>
-                <!-- /Nav -->
-            </div>
-        </div>
-
-        <div id="main-hero" class="hero-body bg-1">
-            <div class="container has-text-centered">
-                <div class="columns is-vcentered mt-20 mb-80">
-                    <div class="column is-6 is-offset-3">
-                        <!-- Login form -->
-                        <div id="login-card" class="animated preFadeIn fadeIn">
-                            <div class="flex-card clean-login-card">
-                                <h2>Sign in</h2>
-                                <SignInForm/>
+    <div class="wrapper">
+        <div class="page-header">
+            <div class="page-header-image"></div>
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 offset-lg-4 offset-md-4">
+                            <div class="card card-register">
+                                <div class="card-header">
+                                    <h4 class="card-title">Sign In</h4>
+                                </div>
+                                <div class="card-body">
+                                    <SignInForm/>
+                                </div>
                             </div>
-
-                            <p class="has-text-centered mt-30">
-                                <a class="no-account light-text" href="#">Forgot your password?</a>
-                            </p>
+                            <router-link :to="{ name: 'Forgot Password' }" class="text-white">Forgot your password?</router-link>
                         </div>
-                        <!-- /Login form -->
                     </div>
                 </div>
             </div>
@@ -32,11 +24,10 @@
 </template>
 
 <script>
-import Navbar from '../../../components/html/navbar.vue';
-import SignInForm from '../../../components/forms/auth/signin.vue';
+import SignInForm from '../../../components/forms/auth/sign-in-form.vue';
 
 export default {
     name: 'SignIn',
-    components: {Navbar, SignInForm}
+    components: {SignInForm}
 }
 </script>

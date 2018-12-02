@@ -1,27 +1,20 @@
 <template>
-    <!-- Hero and nav -->
-    <div class="hero is-light-grey is-fullheight">
-        <div class="navbar-wrapper navbar-sticky">
-            <div class="hero-head">
-                <!-- Nav -->
-                <Navbar/>
-                <!-- /Nav -->
-            </div>
-        </div>
-
-        <!-- Hero image -->
-        <div id="main-hero" class="hero-body bg-1">
-            <div class="container has-text-centered">
-                <div class="columns is-vcentered mt-40 mb-80">
-                    <div class="column is-6 is-offset-3">
-                        <!-- Login form -->
-                        <div id="login-card" class="animated preFadeIn fadeIn">
-                            <div class="flex-card clean-login-card">
-                                <h2>Change Password</h2>
-                                <ResetPasswordForm/>
+    <div class="wrapper">
+        <div class="page-header">
+            <div class="page-header-image"></div>
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 offset-lg-4 offset-md-4">
+                            <div class="card card-register">
+                                <div class="card-header">
+                                    <h4 class="card-title">Reset Password</h4>
+                                </div>
+                                <div class="card-body">
+                                    <ResetPasswordForm/>
+                                </div>
                             </div>
                         </div>
-                        <!-- /Login form -->
                     </div>
                 </div>
             </div>
@@ -30,11 +23,10 @@
 </template>
 
 <script>
-import Navbar from '../../../components/html/navbar.vue';
-import ResetPasswordForm from '../../../components/forms/auth/resetpassword.vue';
+import ResetPasswordForm from '../../../components/forms/auth/reset-password-form.vue';
 
 export default {
     name: 'ResetPassword',
-    components: {Navbar, ResetPasswordForm}
+    components: {ResetPasswordForm}
 }
 </script>
