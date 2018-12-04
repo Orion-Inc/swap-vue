@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-primary " color-on-scroll="100">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-primary navbar-shadow" color-on-scroll="100">
         <div class="container">
             <div class="navbar-translate">
                 <router-link :to="{ name: 'index'}" class="navbar-brand">
@@ -38,9 +38,18 @@
 </template>
 
 <script>
-
-
 export default {
     name: 'Navbar'
 }
 </script>
+<style>
+    nav.navbar-shadow {
+        box-shadow: 0 4px 18px 0 rgba(0,0,0,.12), 0 7px 10px -5px rgba(0,0,0,.15);
+    }
+
+    nav ul.navbar-nav li.dropdown.nav-item a{
+        font-weight: 600;
+    }
+</style>
+
+

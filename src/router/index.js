@@ -51,19 +51,44 @@ const routes = new Router({
 				},
 				{
 					path: 'dashboard',
-					name: 'Dashboard',
 					component: Dashboard,
 					meta: {
 						
 					},
 					children: [
 						{
+							path: 'home',
+							name: 'Dashboard',
+							
+						},
+						{
 							path: 'my-profile',
-							name: 'My Profile'
+							name: 'My Profile',
 						},
 						{
 							path: 'settings',
 							name: 'Settings'
+						},
+						{
+							path: 'trade',
+							children: [
+								{
+									path: 'buy',
+									name: 'Buy'
+								},
+								{
+									path: 'sell',
+									name: 'Sell',
+								},
+								{
+									path: 'new',
+									name: 'New Ad',
+								},
+							]
+						},
+						{
+							path: 'my-wallet',
+							name: 'My Wallet'
 						},
 					]
 				}

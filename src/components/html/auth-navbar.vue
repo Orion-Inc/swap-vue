@@ -3,7 +3,7 @@
         <div class="container">
             <div class="navbar-translate">
                 <router-link :to="{ name: 'index'}" class="navbar-brand">
-                    <img src="../../assets/img/logo-alt.png" alt="Swap logo" height="50px">
+                    <img src="../../assets/img/logo-alt.png" alt="Swap logo" height="50px"> swap.io
                 </router-link>
                 <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-bar bar1"></span>
@@ -15,7 +15,7 @@
                 <div class="navbar-collapse-header">
                     <div class="row">
                         <div class="col-6 collapse-brand">
-                            <a>Swap</a>
+                            <a>swap</a>
                         </div>
                         <div class="col-6 collapse-close text-right">
                             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">

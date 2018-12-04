@@ -1,7 +1,6 @@
 <template>
     <div class="wrapper">
         <div class="page-header">
-            <div class="page-header-image"></div>
             <div class="content">
                 <div class="container">
                     <div class="row">
@@ -17,7 +16,7 @@
                                     <SignUpForm/>
                                 </div>
                             </div>
-                            <p>Already have an Account? <router-link :to="{ name: 'Sign In' }" class="text-white">Sign in</router-link></p>
+                            <p class="text-white">Already have an Account? <router-link :to="{ name: 'Sign In' }" class="text-white">Sign in</router-link></p>
                         </div>
                     </div>
                 </div>

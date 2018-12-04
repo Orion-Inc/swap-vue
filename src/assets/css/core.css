@@ -84,9 +84,9 @@ body {
     font-size: .875rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #525f7f;
+    color: #212529;
     text-align: left;
-    background-color: #fff
+    background-color: #f4f5f7
 }
 
 [tabindex="-1"]:focus {
@@ -1789,7 +1789,7 @@ pre code {
     padding: .5rem .7rem;
     font-size: .875rem;
     line-height: 1.428571;
-    color: hsla(0, 0%, 100%, .8);
+    color: #212529;
     background-color: transparent;
     background-clip: padding-box;
     border: 1px solid #cad1d7;
@@ -1810,7 +1810,7 @@ pre code {
 }
 
 .form-control:focus {
-    color: hsla(0, 0%, 100%, .8);
+    color: #212529;
     background-color: #fff;
     border-color: rgba(50, 151, 211, .25);
     outline: 0;
@@ -1829,7 +1829,7 @@ pre code {
 }
 
 select.form-control:focus::-ms-value {
-    color: hsla(0, 0%, 100%, .8);
+    color: #212529;
     background-color: transparent
 }
 
@@ -3324,7 +3324,7 @@ input[type=submit].btn-block {
     display: none;
     float: left;
     min-width: 10rem;
-    padding: .5rem 0;
+    padding: 0 0;
     margin: .125rem 0 0;
     font-size: .875rem;
     color: #525f7f;
@@ -3442,7 +3442,7 @@ input[type=submit].btn-block {
 
 .dropdown-divider {
     height: 0;
-    margin: .5rem 0;
+    margin: 0 0;
     overflow: hidden;
     border-top: 1px solid #e9ecef
 }
@@ -3920,7 +3920,7 @@ input[type=submit].btn-block {
     height: calc(2.25rem + 2px);
     padding: .375rem 1.75rem .375rem .75rem;
     line-height: 1.428571;
-    color: hsla(0, 0%, 100%, .8);
+    color: #212529;
     vertical-align: middle;
     background: transparent url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%2332325d' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
     background-size: 8px 10px;
@@ -3937,7 +3937,7 @@ input[type=submit].btn-block {
 }
 
 .custom-select:focus::-ms-value {
-    color: hsla(0, 0%, 100%, .8);
+    color: #212529;
     background-color: transparent
 }
 
@@ -4024,7 +4024,7 @@ input[type=submit].btn-block {
     right: 0;
     padding: .5rem .7rem;
     line-height: 1.428571;
-    color: hsla(0, 0%, 100%, .8);
+    color: #212529;
     background-color: transparent
 }
 
@@ -5450,29 +5450,31 @@ input[type=submit].btn-block {
 
 .list-group-item-action {
     width: 100%;
-    color: #525f7f;
-    text-align: inherit
+    color: #9a9a9a;
+    text-align: left
 }
 
 .list-group-item-action:focus,
 .list-group-item-action:hover {
-    color: #525f7f;
+    color: #cb4b70;
     text-decoration: none;
     background-color: #f6f9fc
 }
 
 .list-group-item-action:active {
-    color: #525f7f;
+    color: #cb4b70;
     background-color: #e9ecef
 }
 
 .list-group-item {
     position: relative;
     display: block;
-    padding: 1rem;
+    padding: .5rem;
     margin-bottom: -.0625rem;
     background-color: #fff;
-    border: .0625rem solid #e9ecef
+    /*border: .0625rem solid #e9ecef*/
+    font-size: 1.2em;
+    font-weight: 500
 }
 
 .list-group-item:first-child {
@@ -5500,9 +5502,9 @@ input[type=submit].btn-block {
 
 .list-group-item.active {
     z-index: 2;
-    color: #fff;
-    background-color: #cb4b70;
-    border-color: #cb4b70
+    color: #cb4b70;
+    /* background-color: #cb4b70; */
+    border-color: #cb4b70;
 }
 
 .list-group-flush .list-group-item {
@@ -11772,7 +11774,7 @@ fieldset[disabled] .btn-simple:hover {
 
 .dropdown-menu .dropdown-item.active,
 .dropdown-menu .dropdown-item:active {
-    color: inherit
+    color: #cb4b70
 }
 
 .dropup .dropdown-menu:before {
@@ -11826,10 +11828,11 @@ fieldset[disabled] .btn-simple:hover {
 
 .bootstrap-select .dropdown-menu.inner li a,
 .dropdown-menu .dropdown-item {
-    font-size: .75rem;
+    font-size: .8rem;
+    font-weight: 600;
     padding-top: .6rem;
     padding-bottom: .6rem;
-    margin-top: 5px;
+    margin-top: 0;
     transition: all .15s linear
 }
 
@@ -13395,7 +13398,7 @@ img {
     padding-top: .3125rem;
     padding-bottom: .3125rem;
     color: #fff;
-    text-transform: capitalize;
+    text-transform: inherit;
     font-size: 1rem
 }
 
@@ -13804,7 +13807,7 @@ h6 {
 }
 
 p {
-    color: hsla(0, 0%, 100%, .8);
+    color: #212529;
     margin-bottom: 5px
 }
 
@@ -13885,7 +13888,7 @@ p.description {
 }
 
 .blockquote.blockquote-white {
-    border-color: hsla(0, 0%, 100%, .8);
+    border-color: #212529;
     color: #fff
 }
 
@@ -16927,7 +16930,7 @@ hr.line-deafult {
 }
 
 .page-header>.content {
-    margin-top: 11%;
+    margin-top: 8%;
     text-align: center;
     margin-bottom: 50px
 }
@@ -19627,7 +19630,7 @@ input.datetimepicker[data-color=yellow]+.bootstrap-datetimepicker-widget table t
 
 @media (max-width:575.98px) {
     .card.card-register {
-        margin-top: 50px
+        margin-top: 100px
     }
 }
 

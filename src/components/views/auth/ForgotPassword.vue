@@ -1,7 +1,6 @@
 <template>
     <div class="wrapper">
         <div class="page-header">
-            <div class="page-header-image"></div>
             <div class="content">
                 <div class="container">
                     <div class="row">
