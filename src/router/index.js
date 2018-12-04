@@ -11,6 +11,13 @@ import SignUp from '@/components/views/auth/SignUp'
 import ForgotPassword from '@/components/views/auth/ForgotPassword'
 import ResetPassword from '@/components/views/auth/ResetPassword'
 
+import DashboardHome from '@/components/views/dashboard/DashboardHome'
+import Trade from '@/components/views/dashboard/Trade'
+
+import PostAd from '@/components/views/dashboard/trade/PostAd'
+import Buy from '@/components/views/dashboard/trade/Buy'
+import Sell from '@/components/views/dashboard/trade/Sell'
+
 Vue.use(Router)
 
 const routes = new Router({
@@ -59,7 +66,7 @@ const routes = new Router({
 						{
 							path: 'home',
 							name: 'Dashboard',
-							
+							component: DashboardHome
 						},
 						{
 							path: 'my-profile',
@@ -71,18 +78,22 @@ const routes = new Router({
 						},
 						{
 							path: 'trade',
+							component: Trade,
 							children: [
 								{
 									path: 'buy',
-									name: 'Buy'
+									name: 'Buy',
+									component: Buy
 								},
 								{
 									path: 'sell',
 									name: 'Sell',
+									component: Sell
 								},
 								{
 									path: 'new',
 									name: 'New Ad',
+									component: PostAd
 								},
 							]
 						},

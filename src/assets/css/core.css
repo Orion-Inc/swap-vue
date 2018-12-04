@@ -4725,6 +4725,11 @@ input[type=submit].btn-block {
     margin-left: -.75rem
 }
 
+.card-header-buy-sell .nav-link {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
 .card-img-overlay {
     position: absolute;
     top: 0;
@@ -16629,7 +16634,7 @@ textarea.form-control:focus {
 }
 
 hr {
-    width: 10%;
+    width: 100%;
     height: 1px;
     border-radius: 3px;
     margin-left: 0
@@ -19274,7 +19279,7 @@ input.datetimepicker[data-color=yellow]+.bootstrap-datetimepicker-widget table t
 }
 
 .card .card-body .card-title {
-    color: #fff;
+    color: #212529;
     text-transform: inherit;
     font-weight: 300;
     margin-bottom: .75rem
@@ -19649,7 +19654,7 @@ input.datetimepicker[data-color=yellow]+.bootstrap-datetimepicker-widget table t
 
 .card-stats .card-body .numbers {
     text-align: right;
-    font-size: 2em
+    font-size: 1.25em
 }
 
 .card-stats .card-body .numbers p {

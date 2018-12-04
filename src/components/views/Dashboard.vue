@@ -6,7 +6,7 @@
                 <div class="content">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 px-2 py-2">
                                 <Sidebar/>
                             </div>
                             <div class="col-lg-9">
@@ -25,7 +25,7 @@ import Navbar from '../html/dashboard-navbar.vue';
 import Sidebar from '../html/dashboard-sidebar.vue';
 
 export default {
-    name: 'Dashboard',
+    name: 'dashboard',
     components: {Navbar, Sidebar}
 }
 </script>
