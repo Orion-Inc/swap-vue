@@ -34,6 +34,9 @@ const routes = new Router({
 				{
 					path: 'auth',
 					component: Auth,
+					meta: {
+						guest: true
+					},
 					children: [
 						{
 							path: 'sign-in',
@@ -61,7 +64,7 @@ const routes = new Router({
 					path: 'dashboard',
 					component: Dashboard,
 					meta: {
-						
+						requiresAuth: true
 					},
 					children: [
 						{

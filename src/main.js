@@ -29,11 +29,25 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
 
+router.beforeEach((to, from, next) => {
+	if (to.matched.some(record => record.meta.requiresAuth)) {
+		if (!store.getters.isAuthenticated()) {
+			next({
+				name: 'Sign In'
+			})
+		} else {
+			next()
+		}
+	} else {
+		next() // make sure to always call next()!
+	}
+})
+
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  store,
-  router,
-  components: { App },
-  template: '<App/>'
+	el: '#app',
+	store,
+	router,
+	components: { App },
+	template: '<App/>'
 });
