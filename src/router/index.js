@@ -7,6 +7,7 @@ import Auth from '@/components/views/Auth'
 import Dashboard from '@/components/views/Dashboard'
 
 import SignIn from '@/components/views/auth/SignIn'
+import LogOut from '@/components/views/auth/LogOut'
 import SignUp from '@/components/views/auth/SignUp'
 import ForgotPassword from '@/components/views/auth/ForgotPassword'
 import ResetPassword from '@/components/views/auth/ResetPassword'
@@ -100,6 +101,11 @@ const routes = new Router({
 						{
 							path: 'my-wallet',
 							name: 'My Wallet'
+						},
+						{
+							path: 'logout',
+							name: 'Log Out',
+							component: LogOut
 						},
 					]
 				}

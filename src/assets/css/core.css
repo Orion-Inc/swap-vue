@@ -19258,7 +19258,7 @@ input.datetimepicker[data-color=yellow]+.bootstrap-datetimepicker-widget table t
     position: relative;
     width: 100%;
     margin-bottom: 30px;
-    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .1)
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .3)
 }
 
 .card label {
@@ -19594,9 +19594,9 @@ input.datetimepicker[data-color=yellow]+.bootstrap-datetimepicker-widget table t
 
 .card-register .card-header .card-title {
     position: relative;
-    font-size: 1.5em;
-    font-weight: 400;
-    color: #212529;
+    font-size: 2em;
+    font-weight: 600;
+    color: #cb4b70;
     text-align: center;
     /* text-transform: lowercase; */
     /* margin-left: -5px; */

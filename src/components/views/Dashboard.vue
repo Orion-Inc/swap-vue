@@ -5,11 +5,17 @@
             <div class="page-header">
                 <div class="content">
                     <div class="container">
-                        <div class="row">
+                        <div class="row" v-if="$route.name != 'Log Out'">
                             <div class="col-lg-3 px-2 py-2">
                                 <Sidebar/>
                             </div>
                             <div class="col-lg-9">
+                                <router-view></router-view>
+                            </div>
+                        </div>
+
+                        <div class="row" v-if="$route.name == 'Log Out'">
+                            <div class="col-lg-12">
                                 <router-view></router-view>
                             </div>
                         </div>

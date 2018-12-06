@@ -11,6 +11,8 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import App from './App'
 import router from './router'
 
+import { store } from './store'
+
 require('./assets/img/favicon.png');
 
 require('./assets/css/nucleo-icons.css');
@@ -30,6 +32,7 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   components: { App },
   template: '<App/>'

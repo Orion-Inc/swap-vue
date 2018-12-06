@@ -25,7 +25,12 @@ export default {
     },
     methods: {
         login (){
-
+            this.$store.dispatch('AUTHENTICATE', {
+                email: this.email,
+                password: this.password
+            }).then( response => {
+                this.$router.push({ name: 'Dashboard' })
+            })
         }
 
     }
