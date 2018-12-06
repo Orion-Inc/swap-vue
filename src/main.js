@@ -31,15 +31,23 @@ Vue.config.productionTip = false
 
 router.beforeEach((to, from, next) => {
 	if (to.matched.some(record => record.meta.requiresAuth)) {
-		if (!store.getters.isAuthenticated()) {
+		if (!store.getters.isAuthenticated) {
 			next({
 				name: 'Sign In'
 			})
 		} else {
 			next()
 		}
+	} else if(to.matched.some(record => record.meta.guest)) {
+		if (store.getters.isAuthenticated) {
+			next({
+				name: 'Dashboard'
+			})
+		} else {
+			next()
+		}
 	} else {
-		next() // make sure to always call next()!
+		next()
 	}
 })
 
