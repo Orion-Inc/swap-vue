@@ -12246,7 +12246,7 @@ fieldset[disabled] .btn-simple:hover {
 .form-control:focus+.input-group-prepend .input-group-text,
 .form-control:focus~.input-group-append .input-group-text,
 .form-control:focus~.input-group-prepend .input-group-text {
-    border: 1px solid #cb4b70;
+    border: 1px solid #cb4b70!important;
     border-left: none;
     background-color: transparent
 }
@@ -12282,13 +12282,13 @@ fieldset[disabled] .btn-simple:hover {
 .has-success .form-control,
 .has-success .input-group-append .input-group-text,
 .has-success .input-group-prepend .input-group-text {
-    border-color: #cb4b70
+    border-color: #cb4b70!important
 }
 
 .has-success .form-control:focus,
 .has-success.input-group-focus .input-group-append .input-group-text,
 .has-success.input-group-focus .input-group-prepend .input-group-text {
-    border-color: #00bf9a
+    border-color: #00bf9a!important
 }
 
 .has-danger .form-control,
@@ -12296,7 +12296,7 @@ fieldset[disabled] .btn-simple:hover {
 .has-danger.input-group-focus .input-group-append .input-group-text,
 .has-danger.input-group-focus .input-group-prepend .input-group-text,
 .has-danger .input-group-prepend .input-group-text {
-    border-color: #f33620;
+    border-color: #f33620!important;
     color: #ec250d;
     background-color: hsla(0, 0%, 87%, .1)
 }
@@ -15459,7 +15459,7 @@ code {
 .input-group-focus .input-group-prepend .input-group-text {
     background-color: #fff;
     background-color: transparent;
-    border-color: #cb4b70
+    border-color: #cb4b70!important
 }
 
 .input-group-focus.no-border .input-group-append .input-group-text,
@@ -19600,6 +19600,7 @@ input.datetimepicker[data-color=yellow]+.bootstrap-datetimepicker-widget table t
     text-align: center;
     /* text-transform: lowercase; */
     /* margin-left: -5px; */
+    margin-bottom: 0rem;
     z-index: 1;
 }
 
@@ -19754,4 +19755,9 @@ input.datetimepicker[data-color=yellow]+.bootstrap-datetimepicker-widget table t
 
 .card-chart .dropdown .btn {
     margin: 0
+}
+
+.card.card-message {
+    margin: 20% auto;
+    width: 100%;
 }

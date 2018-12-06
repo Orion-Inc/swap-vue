@@ -20,6 +20,8 @@ require('./assets/css/typicons.min.css');
 
 
 require('./assets/css/core.css');
+
+require('./assets/js/core.js');
 require('./assets/js/plugins/perfect-scrollbar.jquery.min.js');
 
 
