@@ -13734,7 +13734,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: hsla(0, 0%, 100%, .8)
+    color: #212529;
 }
 
 h1,
@@ -15443,7 +15443,7 @@ code {
 .input-group-prepend .input-group-text {
     background-color: transparent;
     border-radius: .4285rem;
-    color: #fff;
+    color: #cb4b70;
     margin: 0
 }
 
@@ -16974,7 +16974,7 @@ hr.line-deafult {
 
 .page-header .category,
 .page-header .description {
-    color: hsla(0, 0%, 100%, .8)
+    color: #212529
 }
 
 .page-header.page-header-small {
@@ -19760,4 +19760,8 @@ input.datetimepicker[data-color=yellow]+.bootstrap-datetimepicker-widget table t
 .card.card-message {
     margin: 20% auto;
     width: 100%;
+}
+
+.card.card-message .card-body {
+    text-align: left;
 }

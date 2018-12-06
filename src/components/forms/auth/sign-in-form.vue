@@ -1,12 +1,19 @@
 <template>
     <form class="form" action="#" @submit.prevent="login">
-        <div class="form-group">
-            <label>Email Address</label>
-            <input type="email" class="form-control" placeholder="Enter Email Address" v-model="email">
+        <label class="d-block d-sm-none">Email Address</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><font-awesome-icon :icon="['fas', 'user']" /></span>
+            </div>
+            <input type="email" class="form-control" placeholder="Email Address " v-model="email">
         </div>
-        <div class="form-group">
-            <label>Password</label>
-            <input type="password" class="form-control" placeholder="Enter Your Password" v-model="password">
+
+        <label class="d-block d-sm-none">Password</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><font-awesome-icon :icon="['fas', 'lock']" /></span>
+            </div>
+            <input type="password" class="form-control" placeholder="Password" v-model="password">
         </div>
         <div class="text-center">
             <button type="submit" class="btn btn-primary">Login</button>
@@ -15,6 +22,7 @@
 </template>
 
 <script>
+
 export default {
     name: 'SignInForm',
     data() {

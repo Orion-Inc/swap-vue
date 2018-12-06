@@ -62,6 +62,23 @@ export const store = new Vuex.Store({
 
                 context.commit('logout');
             }
+        },
+        REGISTER(context, data) {
+            return new Promise((resolve, reject) => {
+                axios.post('/auth/signup', {
+                    firstname: data.firstname,
+                    othername: data.othername,
+                    username: data.username,
+                    email: data.email,
+                    phone: data.phone,
+                    password: data.password
+                }).then(function (response) {
+                    resolve(response)
+                }).catch(function (error) {
+                    console.log(error);
+                    reject(error);
+                });
+            })
         }
     }
 });
