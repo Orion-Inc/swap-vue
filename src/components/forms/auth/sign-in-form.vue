@@ -3,9 +3,9 @@
         <label class="d-block d-sm-none">Email Address</label>
         <div class="input-group">
             <div class="input-group-prepend">
-                <span class="input-group-text"><font-awesome-icon :icon="['fas', 'user']" /></span>
+                <span class="input-group-text"><font-awesome-icon :icon="['far', 'user']" /></span>
             </div>
-            <input type="email" class="form-control" placeholder="Email Address " v-model="email">
+            <input type="email" class="form-control" placeholder="Email Address or Username" v-model="email">
         </div>
 
         <label class="d-block d-sm-none">Password</label>
