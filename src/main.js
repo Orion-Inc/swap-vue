@@ -3,6 +3,7 @@
 import Vue from 'vue'
 
 import BootstrapVue from 'bootstrap-vue'
+import VueFilter from 'vue-filter';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -27,6 +28,7 @@ require('./assets/js/plugins/perfect-scrollbar.jquery.min.js');
 
 
 Vue.use(BootstrapVue);
+Vue.use(VueFilter);
 
 library.add(fas, far)
 Vue.component('font-awesome-icon', FontAwesomeIcon)

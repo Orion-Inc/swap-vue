@@ -12,7 +12,7 @@
                             </div>
                             <div class="col-7 col-md-8">
                                 <div class="numbers">
-                                    <p class="card-title">GHS 0.00 <small>0.00%</small></p>
+                                    <p class="card-title">GHS {{ btc.price|toPrecision(3) }} <small>{{ btc.change|toPrecision(3) }}%</small></p>
                                     <p class="card-category">Bitcoin</p>
                                 </div>
                             </div>
@@ -31,7 +31,7 @@
                             </div>
                             <div class="col-7 col-md-8">
                                 <div class="numbers">
-                                    <p class="card-title">GHS 0.00 <small>0.00%</small></p>
+                                    <p class="card-title">GHS {{ eth.price|toPrecision(3) }} <small>{{ eth.change|toPrecision(3) }}%</small></p>
                                     <p class="card-category">Ethereum</p>
                                 </div>
                             </div>
@@ -50,7 +50,7 @@
                             </div>
                             <div class="col-7 col-md-8">
                                 <div class="numbers">
-                                    <p class="card-title">GHS 0.00 <small>0.00%</small></p>
+                                    <p class="card-title">GHS {{ ltc.price|toPrecision(3) }} <small>{{ ltc.change|toPrecision(3) }}%</small></p>
                                     <p class="card-category">Litecoin</p>
                                 </div>
                             </div>
@@ -82,6 +82,22 @@
 require('../../../assets/css/cryptofont.min.css');
 
 export default {
-    name: 'DashboardHome'
+    name: 'DashboardHome',
+    data() {
+        return {
+            btc: {
+                price: 0.00,
+                change: 0.00
+            },
+            eth: {
+                price: 0.00,
+                change: 0.00
+            },
+            ltc: {
+                price: 0.00,
+                change: 0.00
+            }
+        }
+    }
 }
 </script>
