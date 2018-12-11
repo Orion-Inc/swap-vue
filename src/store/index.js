@@ -18,6 +18,9 @@ export const store = new Vuex.Store({
     getters: {
         isAuthenticated(state) {
             return state.token != null
+        },
+        isActivated(state) {
+
         }
     },
     mutations: {
@@ -55,14 +58,6 @@ export const store = new Vuex.Store({
                 });
             })
         },
-        LOGOUT(context) {
-            if(context.getters.isAuthenticated) {
-                $cookies.remove("token");
-                sessionStorage.removeItem('user');
-
-                context.commit('logout');
-            }
-        },
         REGISTER(context, data) {
             return new Promise((resolve, reject) => {
                 axios.post('/auth/signup', {
@@ -79,6 +74,26 @@ export const store = new Vuex.Store({
                     reject(error);
                 });
             })
-        }
+        },
+        RECOVER(context, data) {
+            return new Promise((resolve, reject) => {
+                axios.post('/auth/recover', {
+                    email: data.email
+                }).then(function (response) {
+                    resolve(response)
+                }).catch(function (error) {
+                    console.log(error);
+                    reject(error);
+                });
+            })
+        },
+        LOGOUT(context) {
+            if(context.getters.isAuthenticated) {
+                $cookies.remove("token");
+                sessionStorage.removeItem('user');
+
+                context.commit('logout');
+            }
+        },
     }
 });

@@ -9,6 +9,7 @@ import Dashboard from '@/components/views/Dashboard'
 import SignIn from '@/components/views/auth/SignIn'
 import LogOut from '@/components/views/auth/LogOut'
 import SignUp from '@/components/views/auth/SignUp'
+import Activate from '@/components/views/auth/Activate'
 import ForgotPassword from '@/components/views/auth/ForgotPassword'
 import ResetPassword from '@/components/views/auth/ResetPassword'
 
@@ -57,6 +58,14 @@ const routes = new Router({
 							path: 'reset-password',
 							name: 'Reset Password',
 							component: ResetPassword
+						},
+						{
+							path: 'activate',
+							name: 'Activate',
+							component: Activate,
+							meta: {
+								activate: false
+							}
 						}
 					]
 				},

@@ -47,6 +47,10 @@ router.beforeEach((to, from, next) => {
 			next({
 				name: 'Dashboard'
 			})
+		} else if (store.getters.isActivated) {
+			next({
+				name: 'Activate'
+			})
 		} else {
 			next()
 		}
