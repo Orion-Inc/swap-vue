@@ -21,6 +21,9 @@ export const store = new Vuex.Store({
         },
         isActivated(state) {
 
+        },
+        userfullname(state) {
+            return `${state.user.firstname} ${state.user.othername}`
         }
     },
     mutations: {

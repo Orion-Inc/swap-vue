@@ -25,7 +25,10 @@
                     </div>
                 </div>
                 <ul class="navbar-nav">
-                    <b-nav-item-dropdown text="Username" class="dropdown nav-item" right>
+                    <b-nav-item-dropdown class="dropdown nav-item" right>
+                        <template slot="button-content">
+                            {{ name }}
+                        </template>
                         <b-dropdown-item :to="{ name: 'My Profile' }"><i class="tim-icons icon-single-02"></i> My Profle</b-dropdown-item>
                         <b-dropdown-item :to="{ name: 'Settings' }"><i class="tim-icons icon-settings-gear-63"></i> Settings</b-dropdown-item>
                         <b-dropdown-divider></b-dropdown-divider>
@@ -39,7 +42,12 @@
 
 <script>
 export default {
-    name: 'Navbar'
+    name: 'Navbar',
+    data() {
+        return {
+            name: this.$store.getters.userfullname
+        }
+    }
 }
 </script>
 <style>
