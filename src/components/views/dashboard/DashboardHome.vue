@@ -98,6 +98,7 @@ export default {
                 change: 0.00
             }
         }
-    }
+    },
+    
 }
 </script>
